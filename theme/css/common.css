@@ -2,6 +2,7 @@
 /*
 * Common
 */
+/* Top Navigation */
 .top-nav{
     height: 35px;
     border-bottom: 1px solid #E3E3E3;
@@ -12,6 +13,7 @@
 .top-nav-r>li{
     float: left;
     line-height: 35px;
+    color: #555;
 }
 .top-nav-r{
     float: right;
@@ -19,5 +21,32 @@
 .top-nav-l>li>a,
 .top-nav-r>li>a{
     font-family: \5b8b\4f53;
+    color: #555;
+    -webkit-transition: color ease-in .2s;
+    -moz-transition: color ease-in .2s;
+    -ms-transition: color ease-in .2s;
+    transition: color ease-in .2s;
+}
+.top-nav-l>li>a:hover,
+.top-nav-r>li>a:hover{
+    color: #F06D00;
+}
+.top-nav-l>li>span,
+.top-nav-l>li>a{
+    margin: 0 5px 0 0;
+}
+.top-nav-r>li>a{
+    padding: 0 10px;
+    border-left: 1px solid #CCC;
+}
+.top-nav-r>li:last-child>a{
+    border-right: 1px solid #CCC;
+}
+.top-nav-r>li:last-child>a:hover{
+    color: inherit;
+}
 
+/* Menu Group */
+.menu-group{
+    border-bottom: 2px solid #F27000;
 }
