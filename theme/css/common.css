@@ -3,6 +3,11 @@
 * Common
 */
 /* Top Navigation */
+.logo,
+.quick-pick-num-title{
+    background: url(../images/common/common-sprit.png) 0 0 no-repeat;
+}
+
 .top-nav{
     height: 35px;
     border-bottom: 1px solid #E3E3E3;
@@ -46,7 +51,194 @@
     color: inherit;
 }
 
+/* Logo and Change city and Search */
+.top-cup{
+    margin: 10px 0 20px 0;
+}
+.logo-wrap,
+.change-city-wrap{
+    float: left;
+}
+.logo{
+    display: block;
+    text-indent: -9999px;
+    width: 374px;
+    height: 70px;
+    overflow: hidden;
+    background-position: 0 0;
+}
+/* Change city */
+.change-city-wrap{
+    position: relative;
+    z-index: 100;
+}
+.change-city-btn{
+    margin: 30px 0 0 10px;
+    padding: 5px 8px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    -webkit-transition: border-color ease-in .2s;
+    -moz-transition: border-color ease-in .2s;
+    -ms-transition: border-color ease-in .2s;
+    transition: border-color ease-in .2s;
+}
+.change-city-btn>span>i{
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-top: 4px solid #666;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    vertical-align: 2px;
+    margin-left: 5px;
+}
+.change-city-btn:hover,
+.change-city-btn.current{
+    border-color: #E3E3E3;
+}
+.city-list{
+    position: absolute;
+    left: 10px;
+    top: 59px;
+    width: 414px;
+    border: 1px solid #E3E3E3;
+    padding: 10px;
+    background: #FFF;
+}
+.city-list-tab>li{
+    float: left;
+    padding: 2px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    -webkit-transition: background .2s, color .2s;
+    -moz-transition: background .2s, color .2s;
+    -ms-transition: background .2s, color .2s;
+    transition: background .2s, color .2s;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+.city-list-tab>li:hover,
+.city-list-tab>li.current{
+    background: #EC6C01;
+    color: #FFF;
+}
+
+.citys-items{
+    border-bottom: 1px solid #E3E3E3;
+    margin: 10px 0;
+}
+.citys-items>span,
+.citys-sub-items>span{
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 15px 10px 0;
+}
+.citys-items>span:hover,
+.citys-items>span.current,
+.citys-sub-items>span:hover,
+.citys-sub-items>span.current{
+    font-weight: bold;
+    color: #EC6C01;
+}
+.citys-sub-items>span{
+    margin-bottom: 0;
+}
+/* Search */
+.search-wrap{
+    float: right;
+    margin:30px 50px 0 0;
+}
+.serarch-input{
+    float: left;
+    width: 405px;
+    border: 1px solid #E3E3E3;
+    border-right: 0;
+    padding: 7px 15px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+.serarch-input>input{
+    width: 100%;
+    border: 0;
+    outline: none;
+}
+.search-btn{
+    float: left;
+    width: 63px;
+}
+.search-btn>button{
+    display: block;
+    width: 100%;
+    background: #EC6C01;
+    color: #FFF;
+    border: 0;
+    height: 34px;
+    margin-left: -2px;
+    outline: none;
+    cursor: pointer;
+    -webkit-border-top-right-radius:3px;
+    -moz-border-top-right-radius:3px;
+    -ms-border-top-right-radius:3px;
+    border-top-right-radius:3px;
+    -webkit-border-bottom-right-radius:3px;
+    -moz-border-bottom-right-radius:3px;
+    -ms-border-bottom-right-radius:3px;
+    border-bottom-right-radius:3px;
+    -webkit-transition: background .2s, color .2s;
+    -moz-transition: background .2s, color .2s;
+    -ms-transition: background .2s, color .2s;
+    transition: background .2s, color .2s;
+}
+.search-btn>button:hover{
+    background: #d96200;
+}
 /* Menu Group */
 .menu-group{
     border-bottom: 2px solid #F27000;
+}
+
+.menu{
+    margin-left: 228px;
+}
+.menu>li{
+    float: left;
+    padding: 0 20px;
+}
+.menu>li>a{
+    display: block;
+    font-size: 16px;
+    line-height: 35px;
+    color: #EC6C01;
+}
+.menu>li>a:hover{
+
+}
+
+/* footer */
+.footer{
+    background: #F5F5F5;
+    border-top: 2px solid #EF6C00;
+    padding: 30px 0;
+    text-align: center;
+}
+.footer a{
+    color: #666;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+.copyright-links a{
+    padding: 0 20px;
+    border-right: 1px solid #999;
+}
+.footer p{
+    margin-top: 10px;
+    color: #666;
+}
+.footer p a{
+    padding: 0 20px;
 }
