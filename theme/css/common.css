@@ -98,8 +98,8 @@
 }
 .city-list{
     position: absolute;
-    left: 10px;
-    top: 59px;
+    left: -1px;
+    top: 28px;
     width: 414px;
     border: 1px solid #E3E3E3;
     padding: 10px;

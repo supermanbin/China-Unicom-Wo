@@ -499,11 +499,17 @@
     line-height: 34px;
     text-align: center;
     font-size: 14px;
-    position: absolute;
     width: 100%;
-    z-index: 3;
     cursor: pointer;
 }
+.phone-type-name{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
 .phone-type-name>em{
     margin: 0 0 0 10px;
 }
